@@ -2,6 +2,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+header {
+    font-family: 'Montserrat', sans-serif;
+}
+
 header,
 main,
 footer {
@@ -47,7 +51,7 @@ h2 {
 }
 
 main {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 main p {
