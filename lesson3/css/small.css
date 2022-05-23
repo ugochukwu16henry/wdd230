@@ -39,7 +39,7 @@ header {
 nav {
     margin: 0 auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
     background-color: #B3DEB6;
     /*36454f*/
