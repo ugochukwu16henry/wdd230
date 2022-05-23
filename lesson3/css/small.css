@@ -30,7 +30,7 @@ header {
     margin-right: auto;
     border: 1px solid gray;
     padding: 0.5rem;
-    background-color: #B3DEB6;
+    background-color: #1E205A;
     text-align: center;
     /*border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;*/
@@ -107,7 +107,7 @@ footer {
     margin: 2rem auto;
     padding: 1rem;
     border: 1px solid gray;
-    background-color: #B3DEB6;
+    background-color: #1E205A;
     text-align: center;
     font-size: 1.2rem;
 }
@@ -124,6 +124,7 @@ footer img:hover {
 }
 
 footer p {
+    color: #F4FF29;
     margin: 0.5rem;
     font-size: 1rem;
 }
