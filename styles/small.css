@@ -1,0 +1,81 @@
+body{
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+header, main, footer{
+    margin: 1.5rem auto;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+}
+
+header{
+    background-color: #1E205A;
+    border-radius: 8px;
+    display: block;
+    padding: 1.5em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+img{
+    display: block;
+    margin: 15px auto;
+    border: solid;
+    border-color: black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+h1{
+    color: white;
+    grid-column: 2 / 4;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-size: 1.75em;
+}
+
+h2{
+    border-bottom: solid;
+    border-color: grey;
+    border-width: thin;
+    line-height: 2em;
+    text-shadow: 5px 5px 10px black;
+}
+
+main{
+    font-family: 'Nunito', sans-serif;
+}
+
+main p {
+    border-top: solid;
+    border-color: grey;
+    border-width: thin;
+    line-height: 2.25rem;
+    font-style: italic;
+    font-size: 0.90em;
+}
+
+ul li{
+    line-height: 2.25em;
+}
+
+footer{
+    background-color: #1E205A;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    padding: 2em;
+    line-height: 1.25em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+footer p{
+    color: #F4FF29;
+    margin-bottom: 0;
+}
+
