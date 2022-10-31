@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--   -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chamber of Owerri city</title>
+    <meta name="author" content="HTML, CSS, JaveScript" />
+    <meta
+    name="description"
+    content=" Home page for Owerri City Chamber
+           website by Henry Ugochukwu in WDD230;
+        Web Frontend Development at Brigham Young University- Idaho." />
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="icon" href="icon_portal.ico">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital@1&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  
+
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/small.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <link rel="stylesheet" href="print.css" media="print">
+
+</head>
+
+
+<body>
+    <header>
+        <picture>
+            <img id="logo-img" src="images/chamber_logo.jpg" alt="Owerri City chamber logo">
+        </picture>
+        <section id="social">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook_logo.png" alt="facebook logo"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedIn_logo.png" alt="LinkedIn logo"></a>
+        </section>
+        <nav>
+            <button id="burguerBtn"><span>&#9776;</span><span>X</span></button>
+            <uL id="primaryNav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+            </uL>
+        </nav>
+          <div id="date"></div>
+
+    </header>
+    <body>
+    <main>
+    <section id="siteName-action">
+        <picture>
+            <source media="(min-width: 37.5em) and (max-width: 65.5em)" srcset="images/wdd230-org -medium-.jpg">
+            <source media="(min-width: 66em)" srcset="images/wdd230-org-large.jpg">
+            <img src="images/wdd230-org -small-.jpg" alt="Owerri city">
+        </picture>
+        <!-- <img src="images/Guayaquil-Ecuador.jpg" alt="Guayaquil city"> -->
+        <h2 id="welcome"> Welcome to Owerri City </h2>
+        <a href="join.html"><h3 id="join-button">Join the Chamber</h3></a>
+    </section>
+
+    <section id="event">
+        <h2 id="event-title">Grand Opening</h2>
+        <h3>Watch World</h3>
+        <p>
+            Join us for the grand opening of the brand new
+            Watch World franchise. Wednesday at 3:00 PM. 
+            <a href="https://www.eluniverso.com/ultimas-noticias/" target="_blank">more info...</a>
+        </p>
+    </section>
+
+    <section id="weather">
+        <h2>Weather</h2>
+        <div id="img-temp">
+            <!-- <img src="images/weather_img_100.png" alt="weather forecast"> -->
+            <p id="temperature"><span id="temp"></span>°C</p>
+        </div>
+
+        <h3 id="condition"></h3>
+        
+        <div id="wind-speed">
+            <p>Speed: </p>
+            <p><span id="w-speed"></span> km/h</p>
+        </div>
+
+        <div id="wind-chill">
+            <p>Wind Chill: </p>
+            <p><span id="w-chill"></span></p>
+        </div>
+    </section>
+
+    <section id="join">
+        <a href="join.html"><h2 id="h-join-button">Join Us!</h2></a>
+        <p>
+            Discover how to join the chamber
+            of commerce and how it will 
+            benefit your organization!
+        </p>
+    </section>
+
+    <section id="news">
+        <h2>News Release</h2>
+        <p>
+            14/10/22 - New upcoming events announced for the next 6
+            months<br>
+            12/10/22 - Economy in Owerri improved by 2%<br>
+            10/10/22 - Associates trip to Aba announced<br>
+            08/10/22 - New benefits added to membership tiers such as 
+            travel and hotel discounts
+        </p>
+    </section>
+
+    <section id="spotlights">
+        <section id="spotlight1">
+            <img src="images/logo_okechukwu.png" alt="okechukwus foundation logo">
+            <p>Okechukwus foundation helping lives</p>
+
+            <a href="https://www.okechukwusfoundation.org">Website</a>
+        </section>
+        <section id="spotlight2">
+            <img src="images/ibcscorp_logo.png" alt="ibcscorp logo">
+            <p>ibcscorp is the best software Developing company in Owerri</p> 
+            <address>No. 132A Wetheral road Owerri</address>
+            <a href="https://www.ibcscorp.com">Website</a>
+        </section>
+        <section id="spotlight3">
+            <img src="images/logo.aawireless.png" alt="aawireless logo">
+            <p> AAwirelesstechnical is the best computer repairs company</p>
+            <a href="https://www.aawirelesstechnical.com">Website</a>
+        </section>
+    </section>
+   </main>
+
+<footer>
+    <section id="upper-footer">
+        <section id="logo-name-address">
+            <img src="images/chamber_logo.jpg" alt="Owerri City chamber">
+            <p>
+                Owerri, Municipal 817<br>
+                Imo State, Nigeria
+            </p>
+        </section>
+
+        <section id="contact-info">
+            <p>Owerricity@chamber.org</p>
+            <p>+(234) 7068313709</p>
+            <p>
+                <a href="https://satellites.pro/Google_plan/Owerri_map.Imo_region.Nigeria">
+                📍 Location Map
+                </a>
+            </p>
+        </section>
+    </section>
+
+    <section id="copyright-weather">
+        <p>Weather Information is powered by <a href="https://www.accuweather.com/en/ng/owerri/253317/weather-forecast/253317/">OpenWeatherMap</a></p> 
+    </section>
+    
+    <section id="footer-info">
+        <section id="copyright-names">
+            <p>&copy; <span id="year"></span> Owerri City chamber</p>
+            <p><strong>Henry Ugochukwu</strong></p> 
+            <p>WDD 230 Project</p>
+        </section>
+        <p>Last Modification: <span id="lmodified"></span></p>
+    </section>
+</footer>
+<script defer src="scripts/main.js"></script>
+<script defer src="scripts/spotlights.js"></script>
+<script defer src="scripts/weather-api.js"></script>
+<script defer src="scripts/windchill.js"></script>
+
+
+
+
+</body>
+
+</html>
