@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory | PoPC</title>
+    <meta name="description" content="Directory page for Owerri City Chamber of Commerce 
+    website by Henry Ugochukwu - BYU-Idaho student">
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Nunito:wght@300&display=swap" rel="stylesheet">
+
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/small.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Banner only visible on Tuesdays or Mondays -->
+    <div id="join-banner">
+        <h1>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 pm.</h1>
+    </div>
+
+    <header>
+        <img id="logo-img" src="images/chamber_logo.jpg" alt="Pearl of the pacific logo">
+
+        <section id="social">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook_logo.png" alt="facebook logo"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedIn_logo.png" alt="LinkedIn logo"></a>
+        </section>
+        <nav>
+            <button id="burguerBtn"><span>&#9776;</span><span>X</span></button>
+            <uL id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li class="active"><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+            </uL>
+        </nav>
+        <div id="date"></div>
+    </header>
+
+    <main id="directory-content">
+        <h2 id="directory-title">Business Directory - Our Associates</h2>
+        <div class="menu">
+            <button id="grid"><img src="images/directory/grid_view_25.png" alt="grid icon"></button>
+            <button id="list"><img src="images/directory/list_view_25.png" alt="list icon"></button>
+        </div>
+        <div class="grid"></div>
+    </main>
+
+    <footer>
+        <section id="upper-footer">
+            <section id="logo-name-address">
+                <img src="images/chamber_logo.jpg" alt="Owerri City">
+                <p>
+                    Av Rumichaca, Jose Campos 817<br> Guayaquil, Ecuador
+                </p>
+            </section>
+            <section id="contact-info">
+                <p>owerricity@chamber.org</p>
+                <p>+(234) 70683-13709</p>
+                <p>
+                    <a href="https://www.google.com/maps/place/ECKOMUSIC/@-2.1897532,-79.8880359,17z/data=!3m1!4b1!4m5!3m4!1s0x902d6e77f483233d:0x850070c2c58d73af!8m2!3d-2.1897532!4d-79.8858472">
+                    📍 Location Map
+                    </a>
+                </p>
+            </section>
+        </section>
+
+        <section id="footer-info">
+            <section id="copyright-names">
+                <p>&copy; <span id="year"></span> Owerri City</p>
+                <p><strong>Henry Ugochukwu</strong></p>
+                <p>WDD 230 Project</p>
+            </section>
+            <p>Last Modification: <span id="lmodified"></span></p>
+        </section>
+    </footer>
+    <script defer src="scripts/main.js"></script>
+    <script defer src="scripts/directory.js"></script>
+</body>
+
+</html>
