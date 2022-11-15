@@ -3,7 +3,7 @@ const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 //url for the weather
-const url = "https://api.openweathermap.org/data/2.5/weather?q=fairbanks&appid=32187ba698e081994209f85c896de7dc&units=imperial";
+const url = "https://api.openweathermap.org/data/2.5/weather?q=Guayaquil&appid=32187ba698e081994209f85c896de7dc&units=imperial";
 
 async function apiFetch() {
     try {
