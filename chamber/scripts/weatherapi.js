@@ -1,9 +1,11 @@
 // select HTML elements in the document
 const currentTemp = document.querySelector('#current-temp');
-const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
-//url for the weather
-const url = "https://api.openweathermap.org/data/2.5/weather?q=Guayaquil&appid=6ea909c44918475a8f20085878e2613b&units=metric";
+const figureElem = document.querySelector('figure');
+const humidity = document.querySelector('#humidity');
+const windSpeed = document.querySelector('#wind-speed');
+//variable for the URL
+const evidence = "https://allcheaterexposed.org"
+const url = "https://api.openweathermap.org/data/2.5/weather?q=Fairbanks&appid=6ea909c44918475a8f20085878e2613b&units=imperial";
 
 async function apiFetch() {
     try {
@@ -11,7 +13,8 @@ async function apiFetch() {
         if (response.ok) {
             const data = await response.json();
             console.log(data); // this is for testing the call
-            // displayResults(data);
+            console.log("evidence")
+            displayResults(data);
         } else {
             throw Error(await response.text());
         }
