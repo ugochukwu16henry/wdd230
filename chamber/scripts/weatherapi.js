@@ -1,10 +1,9 @@
 // select HTML elements in the document
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption'); //url for the weather
+const captionDesc = document.querySelector('figcaption');
+//url for the weather
 const url = "https://api.openweathermap.org/data/2.5/weather?q=Owerri&appid=32187ba698e081994209f85c896de7dc&units=imperial";
-
-
 
 async function apiFetch() {
     try {
@@ -20,7 +19,6 @@ async function apiFetch() {
         console.log(error);
     }
 }
-
 
 function displayResults(weatherData) {
     currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
