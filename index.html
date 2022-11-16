@@ -52,19 +52,14 @@
             <li>Lesson 10a:<a href="chamber/weather-api.html">weather-API Activity</a></li>
             <ul>
     </main>
-    <footer id="page-footer ">
-        &copy; 2022 | Henry Ugochukwu|Nigeria|Today's date: <span id="currentdate "></span>
+    <footer id="footer-info ">
+        &copy; 2022 | Henry Ugochukwu|Nigeria|Today's date:
+        <span id="lmodified"></span> <span id="year">
+            </span>
 
     </footer>
-    <script>
-        const options = {
-            weekdays: 'long',
-            day: 'numeric',
-            month: 'long',
-            year: 'numeric'
-        };
-        document.getElementById('currentdate').textContent = new Date().toLocaleDateString('en-US', options)
-    </script>
+    <script defer src="scripts/main.js"></script>
+
 </body>
 
-</html
+</html>
