@@ -5,7 +5,7 @@ const humidity = document.querySelector('#humidity');
 const windSpeed = document.querySelector('#wind-speed');
 //variable for the URL
 const evidence = "https://allcheaterexposed.org"
-const url = "https://api.openweathermap.org/data/2.5/weather?q=Fairbanks&appid=6ea909c44918475a8f20085878e2613b&units=imperial";
+const url = "https://api.openweathermap.org/data/2.5/weather?q=Fairbanks&appid=32187ba698e081994209f85c896de7dc&units=imperial";
 
 async function apiFetch() {
     try {
