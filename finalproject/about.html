@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bountiful Foods</title>
+    <meta name="description" content="">
+    <link rel="icon" type="image/x-icon" href="./seedling.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- Nav Bar -->
+        <nav class="topnav" id="myTopnav">
+            <a href="./index.html" class="active">
+                <h1><img class="logo" src="./seedling.svg" alt="seedling logo for Bountiful Foods"> Bountiful Foods</h1>
+            </a>
+            <a href="./fresh.html" id="fresh">Fresh</a>
+            <a href="./about.html" class="active" id="about">About Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                    ☰
+                </a>
+        </nav>
+    </header>
+    <main>
+        <!-- Our Story -->
+        <section id="our-story">
+            <h2 class="bigger-h">Our Story</h2>
+            <img src="./images/placeholder.png" data-src="./images/history-bg.webp" alt="woman washing produce">
+            <div class="drk-overlay"></div>
+            <div id="history-txtbx">
+                <p><span class="like-head bigger-h">B</span>ountiful Foods is a long time food and nutrition store in Carlsbad, California and was started by the current owner and operator, Sally Borenstein. The first location was in 1983 in her home and
+                    then the next year, moved to its current location.</p>
+                <br>
+                <p>Bountiful Foods started selling organic fruits and vegetables and recently has opened their doors to grass-fed meat and dairy as well as baked products.</p>
+                <br>
+                <p>“Our customers love that we have an organic selection for them,” said Sally.</p>
+                <br>
+                <p>Bountiful Foods sells many organic foods including: dairy products, meat, cheese, beans, fruits, nuts, organic potatoes, deli meat, eggs, fruits, organic pastas, organic brown rice and organic rice.</p>
+                <br>
+                <p>Bountiful Foods does not sell genetically modified foods.</p>
+                <br>
+                <p>Bountiful Foods was one of the three original businesses to initiate the San Diego County market hosted in the town plaza on a monthly basis since 1982.</p>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact" class="row-center">
+            <div id="contact-container">
+                <h2 class="bigger-h"><strong>Contact Info:</strong></h2><br>
+                <p>Address: 1775 Dove Ln, Carlsbad, CA 92011</p>
+                <p>Phone Number: 442-339-2049</p>
+            </div>
+            <div id="gmap-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3342.139877589175!2d-117.27150378521931!3d33.105406280874135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc0caac80f1f17%3A0xf61389b8a8fbd21b!2sCarlsbad%20City%20Library!5e0!3m2!1sen!2smx!4v1669756649069!5m2!1sen!2smx"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer class="true-center">
+        <!-- Social Media Links -->
+        <div class="social-links">
+            <a href="https://www.facebook.com/groups/1416375691836223" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/ProBirdRights?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.youtube.com/watch?v=2uAIlbs8WeE" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <!-- Last Modified -->
+        <p>Last Modified: <span class="last-modified"></span></p>
+    </footer>
+    <script src="./scripts/lazy.js" async defer></script>
+    <script src="./scripts/index.js" async defer></script>
+    <script src="https://kit.fontawesome.com/47b9b913cf.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

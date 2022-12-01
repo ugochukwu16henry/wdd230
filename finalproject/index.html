@@ -1,182 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
-    <!--   -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Final Project</title>
-    <meta name="author" content="HTML, CSS, JaveScript" />
-    <meta name="description" content=" Final Project website by Henry Ugochukwu in WDD230;
-        Web Frontend Development at Brigham Young University- Idaho." />
-    <link rel="shortcut icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bountiful Foods</title>
+    <meta name="description" content="Bountiful Foods is a health and nutrition store based in Carlsbad, CA. Enjoy the creation and tracking of your nutrients as you explore our selection.">
+    <link rel="icon" type="image/x-icon" href="./seedling.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="icon" href="icon_portal.ico">
-
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital@1&family=Quicksand:wght@500&display=swap" rel="stylesheet">
-
-
-    <link href="styles/normalize.css" rel="stylesheet">
-    <link href="styles/small.css" rel="stylesheet">
-    <link href="styles/medium.css" rel="stylesheet">
-    <link href="styles/large.css" rel="stylesheet">
-    <link rel="stylesheet" href="print.css" media="print">
-
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poiret+One&display=swap" rel="stylesheet">
 </head>
-
 
 <body>
     <header>
-        <picture>
-            <img id="logo-img" src="images/chamber_logo.jpg" alt="Bountiful Foods">
-        </picture>
-        <section id="social">
-            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook_logo.png" alt="facebook logo"></a>
-            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedIn_logo.png" alt="LinkedIn logo"></a>
-        </section>
-        <nav>
-            <button id="burguerBtn"><span>&#9776;</span><span>X</span></button>
-            <uL id="primaryNav">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li>
-                    <a href="fresh.html">The Fresh</a>
-                </li>
-                <li>
-                    <a href="aboutus.html">About Us</a>
-                </li>
-
-            </uL>
+        <!-- Nav Bar -->
+        <nav class="topnav" id="myTopnav">
+            <a href="./index.html" class="active">
+                <h1><img class="logo" src="./seedling.svg" alt="seedling logo for Bountiful Foods"> Bountiful Foods</h1>
+            </a>
+            <a href="./fresh.html" id="fresh">Fresh</a>
+            <a href="./about.html" id="about">About Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                    ☰
+                </a>
         </nav>
-        <div id="date"></div>
-
     </header>
+    <main>
+        <!-- Carlsbad Area Summary -->
+        <section id="area-sum">
+            <picture>
+                <source media="(max-width: 600px)" srcset="./images/fruitbowl-620.webp">
+                <source media="(min-width: 601px)" srcset="./images/fruitbowl-960.webp">
+                <img src="./images/placeholder.png" data-src="./images/fruitbowl-960.webp" alt="two bowls of assorted fruits" id="hero-img">
+            </picture>
+            <h2>Carlsbad Area</h2>
+            <div class="true-center">
+                <p>Carlsbad is a city near San Diego, in California. It's known for Tamarack Surf Beach, backed by the Carlsbad Sea Wall, and secluded South Carlsbad State Beach.</p>
+            </div>
+        </section>
 
-    <body>
-        <main>
-            <section id="siteName-action">
-                <picture>
-                    <source media="(min-width: 37.5em) and (max-width: 65.5em)" srcset="images/wdd230-org -medium-.jpg">
-                    <source media="(min-width: 66em)" srcset="images/wdd230-org-large.jpg">
-                    <img src="images/wdd230-org -small-.jpg" alt="Owerri city">
-                </picture>
-                <!-- <img src="images/Guayaquil-Ecuador.jpg" alt="Guayaquil city"> -->
-                <h2 id="welcome"> Welcome to Owerri City </h2>
-                <a href="join.html">
-                    <h3 id="join-button">Join the Chamber</h3>
-                </a>
+        <!-- CTA Make your Drink -->
+        <section id="cta" class="true-center">
+            <h2 class="bigger-h">Make your own drink!</h2>
+            <form action="./fresh.html">
+                <input class="btn btn-primary" type="submit" value="Get Started!">
+            </form>
+            <img src="./images/placeholder.png" data-src="./images/smoothie-orange.webp" alt="orange smoothie" id="orange-smoothie">
+            <img src="./images/placeholder.png" data-src="./images/smoothie-blue.webp" alt="blue smoothie" id="blue-smoothie">
+        </section>
+
+        <div id="div-double" class="true-center-sm">
+            <!-- Drink Creation Count -->
+            <section id="drink-count" class="true-center">
+                <h2 class="bigger-h">Your drink creation total: </h2>
+                <br>
+                <span id="drink-total" class="bigger-h"></span>
             </section>
 
-            <section id="event">
-                <h2 id="event-title">Grand Opening</h2>
-                <h3>Watch World</h3>
-                <p>
-                    Join us for the grand opening of the brand new Watch World franchise. Wednesday at 3:00 PM.
-                    <a href="https://www.eluniverso.com/ultimas-noticias/" target="_blank">more info...</a>
-                </p>
-            </section>
-
-            <section id="weather">
-                <h2>Weather</h2>
-                <div id="img-temp">
-                    <!-- <img src="images/weather_img_100.png" alt="weather forecast"> -->
-                    <p id="temperature"><span id="temp"></span>°C</p>
+            <!-- Weather Forecast -->
+            <section id="weather" class="true-center">
+                <h2 class="bigger-h">Weather</h2>
+                <div id="top-weath" class="true-center">
+                    <img src="https://via.placeholder.com/150" alt="placeholder" id="weath-img">
+                    <span class="bigger-h" id="temp"></span>
+                    <span id="humid"></span>
+                    <span id="conditions"></span>
                 </div>
-
-                <h3 id="condition"></h3>
-
-                <div id="wind-speed">
-                    <p>Speed: </p>
-                    <p><span id="w-speed"></span> km/h</p>
+                <hr>
+                <div id="bot-weath" class="row-center">
+                    <div id="day1" class="forecast">
+                        <p id="dOW1"></p>
+                        <p id="hi1" class="hi"></p>
+                        <p id="lo1" class="lo"></p>
+                    </div>
+                    <div id="day2" class="forecast">
+                        <p id="dOW2"></p>
+                        <p id="hi2" class="hi"></p>
+                        <p id="lo2" class="lo"></p>
+                    </div>
+                    <div id="day3" class="forecast">
+                        <p id="dOW3"></p>
+                        <p id="hi3" class="hi"></p>
+                        <p id="lo3" class="lo"></p>
+                    </div>
                 </div>
-
-                <div id="wind-chill">
-                    <p>Wind Chill: </p>
-                    <p><span id="w-chill"></span></p>
-                </div>
             </section>
+        </div>
 
-            <section id="join">
-                <a href="join.html">
-                    <h2 id="h-join-button">Join Us!</h2>
-                </a>
-                <p>
-                    Discover how to join the chamber of commerce and how it will benefit your organization!
-                </p>
-            </section>
+    </main>
+    <footer class="true-center">
+        <!-- Social Media Links -->
+        <div class="social-links">
+            <a href="https://www.facebook.com/groups/1416375691836223" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/ProBirdRights?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.youtube.com/watch?v=2uAIlbs8WeE" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </div>
 
-            <section id="news">
-                <h2>News Release</h2>
-                <p>
-                    14/10/22 - New upcoming events announced for the next 6 months
-                    <br> 12/10/22 - Economy in Owerri improved by 2%<br> 10/10/22 - Associates trip to Aba announced<br> 08/10/22 - New benefits added to membership tiers such as travel and hotel discounts
-                </p>
-            </section>
-
-            <section id="spotlights">
-                <section id="spotlight1">
-                    <img src="images/logo_okechukwu.png" alt="okechukwus foundation logo">
-                    <p>Okechukwus foundation helping lives</p>
-
-                    <a href="https://www.okechukwusfoundation.org">Website</a>
-                </section>
-                <section id="spotlight2">
-                    <img src="images/ibcscorp_logo.png" alt="ibcscorp logo">
-                    <p>ibcscorp is the best software Developing company in Owerri</p>
-                    <address>No. 132A Wetheral road Owerri</address>
-                    <a href="https://www.ibcscorp.com">Website</a>
-                </section>
-                <section id="spotlight3">
-                    <img src="images/logo.aawireless.png" alt="aawireless logo">
-                    <p> AAwirelesstechnical is the best computer repairs company</p>
-                    <a href="https://www.aawirelesstechnical.com">Website</a>
-                </section>
-            </section>
-        </main>
-
-        <footer>
-            <section id="upper-footer">
-                <section id="logo-name-address">
-                    <img src="images/chamber_logo.jpg" alt="Owerri City chamber">
-                    <p>
-                        Owerri, Municipal 817<br> Imo State, Nigeria
-                    </p>
-                </section>
-
-                <section id="contact-info">
-                    <p>Owerricity@chamber.org</p>
-                    <p>+(234) 7068313709</p>
-                    <p>
-                        <a href="https://satellites.pro/Google_plan/Owerri_map.Imo_region.Nigeria">
-                📍 Location Map
-                </a>
-                    </p>
-                </section>
-            </section>
-
-            <section id="copyright-weather">
-                <p>Weather Information is powered by <a href="https://www.accuweather.com/en/ng/owerri/253317/weather-forecast/253317/">OpenWeatherMap</a></p>
-            </section>
-
-            <section id="footer-info">
-                <section id="copyright-names">
-                    <p>&copy; <span id="year"></span> Owerri City chamber</p>
-                    <p><strong>Henry Ugochukwu</strong></p>
-                    <p>WDD 230 Project</p>
-                </section>
-                <p>Last Modification: <span id="lmodified"></span></p>
-            </section>
-        </footer>
-        <script defer src="scripts/main.js"></script>
-        <script defer src="scripts/spotlights.js"></script>
-        <script defer src="scripts/weather-api.js"></script>
-        <script defer src="scripts/windchill.js"></script>
-
-
-
-
-    </body>
+        <!-- Contact Info -->
+        <div class="contact-foot">
+            <p class="like-head"><strong>Contact Info:</strong></p>
+            <p>Address: 1775 Dove Ln, Carlsbad, CA 92011</p>
+            <p>Phone Number: 442-339-2049</p>
+        </div>
+        <!-- Last Modified -->
+        <p>Last Modified: <span class="last-modified"></span></p>
+    </footer>
+    <script src="./scripts/index.js" async defer></script>
+    <script src="./scripts/weather.js" async defer></script>
+    <script src="./scripts/lazy.js" async defer></script>
+    <script src="https://kit.fontawesome.com/47b9b913cf.js" crossorigin="anonymous"></script>
+</body>
 
 </html>

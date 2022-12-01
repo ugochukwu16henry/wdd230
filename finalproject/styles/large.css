@@ -8,3 +8,47 @@
 
 
 /* end large*/
+
+@media (min-width:769px) {
+    #div-double {
+        display: grid;
+        grid-template-areas: "count weath";
+    }
+    #drink-count {
+        grid-area: count;
+    }
+    #weather {
+        grid-area: weath;
+    }
+    /* ---------------- About Us ---------------- */
+    #our-story {
+        position: relative;
+        height: 100vh;
+        z-index: 4;
+        overflow: hidden;
+    }
+    #our-story h2 {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 4;
+    }
+    #history-txtbx {
+        width: 60vw;
+        top: 12vh;
+        right: 5vw;
+        margin: 30px;
+        position: absolute;
+        z-index: 4;
+    }
+    #our-story img {
+        display: block;
+        position: absolute;
+        z-index: -1;
+        top: -150px;
+        height: fit-content;
+    }
+    #contact-container {
+        margin: 15px;
+    }
+}
