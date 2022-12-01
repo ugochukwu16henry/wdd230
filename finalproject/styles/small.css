@@ -71,7 +71,7 @@ header button {
 
 #social {
     grid-column: 2;
-    justify-self: center;
+    justify-self: right;
     margin-top: 2rem;
     margin-left: 1rem;
 }
