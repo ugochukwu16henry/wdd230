@@ -3,7 +3,7 @@
 /*----------Header Styles----------*/
 
 header {
-    background-color: #9D0208;
+    background-color: #02869d;
     height: 10 rem;
 }
 
@@ -15,7 +15,7 @@ header {
     font-family: "Roboto", sans-serif;
     background-color: #ffffff;
     height: 4rem;
-    color: #9D0208;
+    color: #026c9d;
     padding-top: 10px;
     padding-bottom: 10px;
     display: flex;
@@ -25,7 +25,7 @@ header {
 }
 
 .home-name {
-    color: #9D0208;
+    color: #025f9d;
     font-family: "Roboto", sans-serif;
 }
 
@@ -49,8 +49,8 @@ header {
 .facebook-logo,
 .instagram-logo {
     margin: 0px 10px 0px 10px;
-    border: #9D0208 solid 5px;
-    background: #9D0208;
+    border: #02799d solid 5px;
+    background: #02869d;
     border-radius: 5px 5px 5px 5px;
 }
 
@@ -70,7 +70,7 @@ nav ul {
     z-index: 1;
     right: 0px;
     width: 100%;
-    background-color: #9D0208;
+    background-color: #02799d;
     height: 4rem;
 }
 
@@ -84,12 +84,12 @@ nav ul li a {
 
 nav ul li.active a {
     background-color: #FFBA08;
-    color: #9D0208;
+    color: #02869d;
 }
 
 nav ul li a:hover {
     background-color: #FFBA08;
-    color: #9D0208;
+    color: #02649d;
 }
 
 .main-content {
@@ -127,21 +127,21 @@ nav ul li a:hover {
     padding-right: 300px;
     padding-top: 5px;
     font-size: 2.7rem;
-    box-shadow: #FFBA08;
+    box-shadow: #6708ff;
 }
 
 #main-text p {
-    background-color: #FFBA08;
+    background-color: #0890ff;
     padding: 50px;
     text-align: center;
-    border: #9D0208 solid 5px;
+    border: #02939d solid 5px;
 }
 
 #main-text h3 {
-    background-color: #FFBA08;
+    background-color: #089cff;
     padding: 50px;
     text-align: center;
-    border: #9D0208 solid 5px;
+    border: #02939d solid 5px;
 }
 
 #strip {
