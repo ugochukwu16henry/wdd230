@@ -1,4 +1,163 @@
 <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="autor" content="Henry Ugochukwu">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/bountiful.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <meta name="description" content="Bountiful Food is a worldwide food broker with a big range of suppliers of quality fruits and vegetables at the best price.">
+    <title>Bountiful Food</title>
+
+</head>
+
+<body>
+    <div class="center-home">
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <a href="./index.html" target="_self"><img src="./images/bountiful.png" alt="Bountiful logo " height="60" /></a>
+                </div>
+                <div class="home-name">
+                    <h1>Bountiful Food</h1>
+                </div>
+                <div class="social-media">
+                    <div class="facebook-logo">
+                        <a href="https://www.facebook.com" target="_blank"><img src="./images/facebook.png" alt="facebook logo" height="32" width="32"></a>
+                    </div>
+                    <div class="instagram-logo">
+                        <a href="https://www.instagram.com" target="_blank"><img src="./images/instagram.png" alt="instagram logo" height="32" width="32"></a>
+                    </div>
+                </div>
+                <nav>
+                    <button id="hamburguerBtn"><span>&#9776;</span><span>X</span></button>
+                    <ul id="primaryNav">
+                        <li><a href="./index.html">Home</a></li>
+                        <li class="active"><a href="#">Fresh</a></li>
+                        <li><a href="./about_us.html">About Us</a></li>
+                    </ul>
+                </nav>
+                <div class="date">
+                </div>
+            </div>
+
+        </header>
+        <main>
+            <div id="form-div">
+                <h2>Make your drink Form</h2>
+                <p class="nine">PLEASE, COMPLETE THE INFIRMATION TO BUILD YOUR SPECIALTY DRINK</p>
+                <hr>
+                <!--CONTACT FORM-->
+
+                <form method="get" action="thanks.html">
+
+                    <fieldset class="form">
+
+                        <legend>Client Information</legend>
+                        <!--full name-->
+                        <label class="top" for="name">Full Name(required)
+                            <input class="box" type="text" id="name" name="user_name" pattern="[A-Z a-z]{5,}" required></label>
+                        <!--I need to add more here, see the requirement page-->
+
+                        <!--email-->
+                        <label class="top" for="mail">E-mail Address
+                            <input class="box" type="email" id="mail" name="user_email" placeholder="user@email.com"></label>
+
+                        <!--phone number-->
+                        <label class="top" for="phone">Phone Number(required)
+                            <input class="box" type="tel" id="phone" name="user_phone" placeholder="###-###-####"
+                                required></label>
+                    </fieldset>
+
+                    <!--drink -->
+                    <fieldset class="form">
+                        <legend>Drink information</legend>
+                        <!--strom date-->
+                        <label class="middle">Fruit 1(required)
+                            <input class="box" list="fruits-types" id="fruit-type-options" name="fruit-type-options"></label>
+                        <datalist id="fruits-types">
+                            <option value="fruit1"><Apple></option>
+                            <option value="fruit2">Apricot</option>
+                            <option value="fruit3">Avocado</option>
+                            <option value="fruit4">Banana</option>
+                        </datalist>
+                        <label class="middle">Fruit 2
+                            <input class="box" list="fruits-types" id="fruit-type-options" name="fruit-type-options"></label>
+                        <datalist id="fruits-types">
+                            <option value="fruit1"><Apple></option>
+                            <option value="fruit2">Apricot</option>
+                            <option value="fruit3">Avocado</option>
+                            <option value="fruit4">Banana</option>
+                        </datalist>
+                        <label class="middle">Fruit 3
+                            <input class="box" list="fruits-types" id="fruit-type-options" name="fruit-type-options"></label>
+                        <datalist id="fruits-types">
+                            <option value="fruit1"><Apple></option>
+                            <option value="fruit2">Apricot</option>
+                            <option value="fruit3">Avocado</option>
+                            <option value="fruit4">Banana</option>
+                        </datalist>
+
+                        <!--Additional information or comments-->
+                        <fieldset>
+                            <legend>Additional Information</legend>
+                            <label class="submitButton" for="msg">Comments</label>
+                            <textarea class="commentsBox" id="msg" name="user_message"></textarea>
+                        </fieldset>
+
+                        <!--form submission button-->
+                        <input class="button" type="submit" value="CLICK to send!">
+
+                </form>
+                <!--end contact form-->
+            </div>
+        </main>
+
+        <footer class="footer-color">
+            <div class="footer-chamber-inf">
+                <div class="footer-logo">
+                    <img src="./images/bountiful.png" alt="Publica-T Valle Grande" width="98">
+                </div>
+                <div class="footer-direction">
+                    <p class="bold-text">Bountiful Foods</p>
+                    <p>Carlsbad, California</p>
+                </div>
+                <div class="footer-contact">
+                    <p>info@bountiful.com</p>
+                    <p>+56 9 45 478 152</p>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-course-inf">
+                <div class="footer_class">
+                    <footer>
+                        <p>
+                            &copy; <span id="year"></span> | Henry Ugochukwu| WDD230 |
+                        </p>
+                        <p class="footer_update">Last Update:
+                            <span id="modified"> </span>
+                        </p>
+                </div>
+            </div>
+            </footer>
+    </div>
+    <script src="./js/current-day.js"></script>
+    <script src="./js/menu-ham.js"></script>
+    <script src="scripts/update.js"></script>
+    <script src="scripts/drink.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="./js/spotlight.js"></script>
+
+</body>
+</body>
+
+</html>
+<!DOCTYPE html>
+
 <html lang="en-us">
 
 <head>
@@ -30,6 +189,9 @@
         </nav>
     </header>
     <main class="true-center">
+        <main>
+            <div class="cards"></div>
+        </main>
         <img src="./images/not-ready-selena-gomez.gif" alt="">
     </main>
     <footer class="true-center">
